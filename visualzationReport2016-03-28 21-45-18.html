@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Visualization Report</title>
+		<style type="text/css">
+		body{
+			margin: 20px;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		nav{
+			position: fixed;
+			top: 85px;
+			bottom: 0; 
+			left: 0;
+			width: 300px; /* Width of navigation frame */
+			overflow: auto; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #eee;
+			border: 2px solid gray
+		}
+		main{
+			position: fixed;
+			top: 85px; 
+			left: 300px; /* Set this to the width of the navigation frame */
+			right: 0;
+			bottom: 0;
+			overflow: auto; 
+			background: #fff;
+			border: 2px solid gray
+		}
+		banner{
+			position: fixed;
+			top: 0; 
+			left: 0; /* Set this to the width of the navigation frame */
+			right: 0;
+			/*bottom: 50px;*/
+			overflow: auto; 
+			background: #3498DB;
+		}
+		detailBanner{
+			position: fixed;
+			top: 60px; 
+			height: 25px;
+			left: 0; /* Set this to the width of the navigation frame */
+			right: 0;
+			overflow: hidden; 
+			background: #F0EFFF;
+		}
+		.innertube{
+			margin-left: 15px; /* Provides padding for the content */
+		}
+		p {
+			color: #555;
+		}
+		.leftSideData{
+			bottom: 0; 
+			left: 0;
+			/*width: 280px;*/ /* Width of navigation frame */
+			background: #eee;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.banner{
+			margin-top: 15px
+			margin-left: 10px;
+		    margin-right: 10px;
+		    text-align: center;
+			vertical-align: center;
+		}
+		.pageInfo{
+			margin-top: 5px
+			margin-left: 2px;
+		    margin-right: 2px;
+		    text-align: center;
+			vertical-align: center;
+		}
+		.detailbanner{
+		    margin-right: 5px;
+			text-align:center;
+		}
+		.verticalLineInDetailBanner{
+			margin-top:1px;
+			margin-bottom:1px;
+			background-color:blue;
+		}
+		h5{
+			background: #3498DB;
+			margin: 0;
+			margin-top:20px;
+			margin-bottom:2px;
+			margin-right: 20px;
+			color:whitesmoke;
+			text-align:center;
+		}
+		h6{
+			text-align:center;
+			display:inline;
+			margin-right: 100px;
+			background-color: #CECED6;
+			border: 3px solid #CECED6;
+			border-radius:12px 10px 10px 10px;
+		}
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+		li{
+			font-size: 90%;
+			margin-right: 20px;
+			margin-bottom:2px;
+			background: #D7D7D7;
+			text-align:center;
+		}
+		/*IE6 fix*/
+		* html body{
+			padding: 0 0 0 230px; /* Set the last value to the width of the navigation frame */
+		}
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+		</style>
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			function updateTextInMain(imagePathToShow){
+				document.getElementById("showImage").src =imagePathToShow;		
+				return false;
+			}
+		</script>	
+	</head>
+	<body>
+			<banner>
+				<div class="banner">
+					<h1 style="color:whitesmoke">Visualizationt Report</h1>
+				</div>
+			</banner>
+	<detailBanner>
+				<div class="detailbanner">
+					<h6><u>Script Name</u>: Not Provided
+					<h6><u>Browser</u>:  chrome(49.0.2623.87)</h6>
+					<h6><u>OS</u>: windows 7</h6>
+					<h6><u>Date & Time</u> : 2016/03/28 21:45:18 </h6>
+				</div>
+				<div class="verticalLineInDetailBanner">
+				<p></p>
+				</div>
+			</detailBanner>
+<main>
+			<div class="innertube">
+				<img style='height: 96%; width: 100%; object-fit: contain; margin-top:10px; ' id ="showImage" src=''>
+			</div>
+		</main>	
+<nav id="nav">
+			<div class="innertube">
+<h5>Check_loginPage</h5>
+			<ul class='leftSideData'>
+				<li><a style="color:black;" onclick=updateTextInMain("C:/visualization/expected/Check_loginPage_Img.jpg") href="#" >Expected</a></li>
+				<li><a style="color:black;"  onclick=updateTextInMain("C:/visualization/actual/Check_loginPage_Img.jpg") href="#">Actual</a></li>
+				<li><a style="color:green;" onclick=updateTextInMain("C:/visualization/difference/Check_loginPage_Img.jpg") href="#">Difference</a></li>
+			</ul>
+         <p></p>
+<h5>Check_Magyar</h5>
+			<ul class='leftSideData'>
+				<li><a style="color:black;" onclick=updateTextInMain("C:/visualization/expected/Check_Magyar_Img.jpg") href="#" >Expected</a></li>
+				<li><a style="color:black;"  onclick=updateTextInMain("C:/visualization/actual/Check_Magyar_Img.jpg") href="#">Actual</a></li>
+				<li><a style="color:red;" onclick=updateTextInMain("C:/visualization/difference/Check_Magyar_Img.jpg") href="#">Difference</a></li>
+			</ul>
+         <p></p>
+<h5>Check_Deutsch</h5>
+			<ul class='leftSideData'>
+				<li><a style="color:black;" onclick=updateTextInMain("C:/visualization/expected/Check_Deutsch_Img.jpg") href="#" >Expected</a></li>
+				<li><a style="color:black;"  onclick=updateTextInMain("C:/visualization/actual/Check_Deutsch_Img.jpg") href="#">Actual</a></li>
+				<li><a style="color:red;" onclick=updateTextInMain("C:/visualization/difference/Check_Deutsch_Img.jpg") href="#">Difference</a></li>
+			</ul>
+         <p></p>
+<h5>Check_Italiano</h5>
+			<ul class='leftSideData'>
+				<li><a style="color:black;" onclick=updateTextInMain("C:/visualization/expected/Check_Italiano_Img.jpg") href="#" >Expected</a></li>
+				<li><a style="color:black;"  onclick=updateTextInMain("C:/visualization/actual/Check_Italiano_Img.jpg") href="#">Actual</a></li>
+				<li><a style="color:red;" onclick=updateTextInMain("C:/visualization/difference/Check_Italiano_Img.jpg") href="#">Difference</a></li>
+			</ul>
+         <p></p>
+<h5>Check_Espanol</h5>
+			<ul class='leftSideData'>
+				<li><a style="color:black;" onclick=updateTextInMain("C:/visualization/expected/Check_Espanol_Img.jpg") href="#" >Expected</a></li>
+				<li><a style="color:black;"  onclick=updateTextInMain("C:/visualization/actual/Check_Espanol_Img.jpg") href="#">Actual</a></li>
+				<li><a style="color:red;" onclick=updateTextInMain("C:/visualization/difference/Check_Espanol_Img.jpg") href="#">Difference</a></li>
+			</ul>
+         <p></p>
