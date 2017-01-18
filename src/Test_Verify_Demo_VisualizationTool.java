@@ -1,5 +1,5 @@
 
-package bornincloud;
+package packageName;
 
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.junit.Test;
 import org.junit.rules.TestName;
 import org.xml.sax.SAXException;
 
-import common.EISTestBase;
+
 import common.Util;
 import common.exception.MetadataException;
 
@@ -50,7 +50,7 @@ public class Test_Verify_Demo_VisualizationTool extends BornInCloudTestBase {
 		 visualValidation("Magyar","Magyar");
          visualValidation("Deutsch","Deutsch");
          visualValidation("Italiano","Italiano");
-         visualValidation("Español","Espanol");
+         visualValidation("EspaÃ±ol","Espanol");
 	}
 	
 	 public static void visualValidation(String languageValue, String lanuageName){
